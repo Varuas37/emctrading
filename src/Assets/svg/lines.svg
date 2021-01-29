@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1476px" height="188px" viewBox="0 0 1476 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graph_2</title>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DarkMode" transform="translate(36.000000, -706.000000)" stroke="#76DDFB" stroke-width="2">
+            <g id="Hero" transform="translate(-47.388264, 0.000000)">
+                <g id="graph_2" transform="translate(12.388264, 709.000000)">
+                    <polyline id="2" points="6 161.256804 75.2213354 178 145.636142 169.553974 213.664006 145.877102 353.300148 169.553974 420.125217 37.5954093 486.968934 131.618861 620.637719 52.8052861 754.306505 125.829913 821.140898 145.877102 886.781819 131.618861 954.809683 152.936394 1021.64408 145.877102 1088.47847 164.053541 1222.14725 118.603069 1288.98165 0 1355.81604 118.603069 1422.65043 118.603069 1475 118.603069"></polyline>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="6" cy="161" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="75" cy="178" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="146" cy="168" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="215" cy="146" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="283" cy="158" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="353" cy="168" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="420" cy="41" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="487" cy="130" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="554" cy="91" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="621" cy="55" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="687" cy="90" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="754" cy="124" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="821" cy="145" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="887" cy="133" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="955" cy="154" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="1022" cy="147" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="1088" cy="163" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="1155" cy="141" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="1222" cy="116" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="1289" cy="6" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="1356" cy="120" r="6"></circle>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="1422" cy="120" r="6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -2,25 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-@font-face {
-	font-family: 'Rufina-Regular';
-	src: local('Rufina-Regular'), url(./Assets/font/Rufina/Rufina-Regular.ttf) format('ttf');
-}
+	@font-face {
+		font-family: 'Rufina-Regular';
+		src: local('Rufina-Regular'), url(./Assets/font/Rufina/Rufina-Regular.ttf) format('ttf');
+	}
 
-@font-face {
-	font-family: 'Rufina-Bold';
-	src: local('Rufina-Bold'), url(./Assets/font/Rufina/Rufina-Bold.ttf) format('ttf');
-}
+	@font-face {
+		font-family: 'Rufina-Bold';
+		src: local('Rufina-Bold'), url(./Assets/font/Rufina/Rufina-Bold.ttf) format('ttf');
+	}
 
-@font-face {
-	font-family: 'Gilroy-Light';
-	src: local('Gilroy-Light'), url(./Assets/font/Gilroy/Gilroy-Light.otf) format('otf');
-}
+	@font-face {
+		font-family: 'Gilroy-Light';
+		src: local('Gilroy-Light'), url(./Assets/font/Gilroy/Gilroy-Light.otf) format('otf');
+	}
 
-@font-face {
-	font-family: 'Gilroy-ExtraBold';
-	src: local('Gilroy-ExtraBold'), url(./Assets/font/Gilroy/Gilroy-ExtraBold.otf) format('otf');
-}
+	@font-face {
+		font-family: 'Gilroy-ExtraBold';
+		src: local('Gilroy-ExtraBold'), url(./Assets/font/Gilroy/Gilroy-ExtraBold.otf) format('otf');
+	}
 }
 body {
 	margin: 0;
@@ -34,3 +34,4 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+

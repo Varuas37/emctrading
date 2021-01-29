@@ -19,6 +19,8 @@ module.exports = {
 			secondarybg:"#17366D",
 			darkpink:"#F44292",
 			darkblue:"#0B1238",
+			accent:"#DDB191",
+			discord:"#7289DA",
 		},
 	},
 	variants: {
