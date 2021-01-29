@@ -7,6 +7,8 @@ function Pricing(props) {
 	const handleClick = (link) => {
 		window.location.href = link;
 	};
+	const discordLink = 'https://discord.gg/6BnZXEDu';
+	
 	const pricing = [
 		{
 			id: 1,
@@ -22,7 +24,7 @@ function Pricing(props) {
 			price: 'Free! Join Now',
 			image: imgGeneral,
 			color: '#7289DA',
-			link: 'https://discord.gg/gQ5kS9U3',
+			link: discordLink,
 		},
 	];
 	return (

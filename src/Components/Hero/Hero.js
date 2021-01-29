@@ -7,21 +7,22 @@ function Hero() {
 		{
 			id: 1,
 			name: svgLine,
-			opacity: 10,
+			opacity: 0.1,
 		},
 		{
 			id: 2,
 			name: svgAreaChart,
-			opacity: 5,
+			opacity: 0.5,
 		},
 		{
 			id: 3,
 			name: svgMainChart,
-			opacity: 10,
+			opacity: 0.1,
 		},
 	];
+	const shopLink = 'https://discord.gg/6BnZXEDu';
 	const handleClick = () => {
-		window.location.href = 'https://upgrade.chat/shop/455927928618745869';
+		window.location.href = shopLink;
 	};
 	return (
 		<div
@@ -50,9 +51,9 @@ function Hero() {
 							key={image.id}
 							draggable="false"
 							src={image.name}
-							className={`absolute w-full opacity-${image.opacity}`}
+							className={`absolute w-full `}
 							alt="background image line"
-							style={{ bottom: 0 }}
+							style={{ bottom: 0, opacity: `${image.opacity}` }}
 						></img>
 					))}
 			</div>

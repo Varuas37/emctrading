@@ -18,6 +18,7 @@ function Navbar() {
 			link: '#pricing',
 		},
 	];
+	const discordLink = 'https://discord.gg/6BnZXEDu';
 	return (
 		<header className="bg-primarybg text-white w-full h-16 flex flex-row p-10 items-center justify-between">
 			<div className="flex flex-row space-x-2 item-center justify-center cursor-pointer">
@@ -41,10 +42,7 @@ function Navbar() {
 						</a>
 					))}
 				</nav>
-				<a
-					href="https://discord.gg/qG8wRPsG"
-					className="hidden sm:inline rounded-md shadow  flex items-center cursor-pointer"
-				>
+				<a href={discordLink} className="hidden sm:inline rounded-md shadow  flex items-center cursor-pointer">
 					<img src={imgDiscordLogo} height="30" width="120"></img>
 				</a>
 			</div>
