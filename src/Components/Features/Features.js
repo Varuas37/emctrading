@@ -19,9 +19,10 @@ function Features() {
 			>
 				Features
 			</h1>
-
-			<div className="g-lightbluebg w-full xl:w-3/5  mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-				{features && features.map((feature) => <FeatureCards id={feature.id} feature={feature} />)}
+			<div className="flex justify-center items-center w-full">
+				<div className="g-lightbluebg w-4/5 mt-5 sm:m-0 sm:mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+					{features && features.map((feature) => <FeatureCards id={feature.id} feature={feature} />)}
+				</div>
 			</div>
 		</section>
 	);

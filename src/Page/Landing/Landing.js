@@ -10,7 +10,7 @@ import Teaching from '../Teaching/Teaching';
 
 function Landing(props) {
 	return (
-		<section className="overflow-x-none flex-1 overflow-y-auto items-center justify-center flex-col h-screen w-full">
+		<section className="overflow-x-hidden flex-1 overflow-y-auto items-center justify-center flex-co w-full">
 			<Hero />
 			<Features />
 			<Testimonials />

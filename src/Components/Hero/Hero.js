@@ -29,7 +29,7 @@ function Hero() {
 			className="relative w-full h-4/5 md:h-screen bg-primarybg text-white flex justify-start items-center flex-col"
 			id="hero"
 		>
-			<div className="w-full flex flex-center flex-col items-center justify-center m-40">
+			<div className="w-full flex flex-center flex-col items-center justify-center mt-40">
 				<h1 className="text-4xl md:text-7xl text-center	" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
 					Investing Advice For{' '}
 					<p>

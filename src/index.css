@@ -25,6 +25,12 @@
 /* *{
 	scroll-behavior: smooth !important;
 } */
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+	height: auto !important;
+}
 body {
 	margin: 0;
 	padding: 0;

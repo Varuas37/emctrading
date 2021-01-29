@@ -84,7 +84,7 @@ function Testimonials() {
 			</h1>
 			<div className="flex flex-col justify-center items-center">
 				<h1
-					className="flex flex-col font-bold text-2xl w-full text-center sm:text-4xl justify-center items-center m-10"
+					className="flex flex-col font-bold text-2xl w-full text-center sm:text-4xl justify-center items-center mt-10"
 					style={{ fontFamily: 'Gilroy-ExtraBold' }}
 				>
 					And lots of statisfied members
