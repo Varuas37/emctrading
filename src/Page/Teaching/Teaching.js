@@ -9,7 +9,7 @@ function Teaching(props) {
 		window.location.href = discordLink;
 	};
 	return (
-		<section className="w-full h-4/5 md:h-3/6 text-secondarybg max-w-7xl mx-auto mt-7 mb-40 sm:mb-0 sm:px-6 lg:px-8 justify-center items-center">
+		<section className="w-full h-4/5 md:h-3/6 text-secondarybg max-w-7xl mx-auto mt-7 mb-7 sm:mb-40 sm:px-6 lg:px-8 justify-center items-center">
 			<div className="text-3xl md:text-5xl text-center" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
 				Stocks Made Easy
 			</div>
