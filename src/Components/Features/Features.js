@@ -20,7 +20,7 @@ function Features() {
 				Features
 			</h1>
 
-			<div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			<div className="g-lightbluebg w-full xl:w-3/5  mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 				{features && features.map((feature) => <FeatureCards id={feature.id} feature={feature} />)}
 			</div>
 		</section>

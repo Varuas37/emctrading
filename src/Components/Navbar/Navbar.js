@@ -5,7 +5,7 @@ function Navbar() {
 		{
 			key: 1,
 			name: 'Home',
-			link: '/',
+			link: '#hero',
 		},
 		{
 			key: 2,

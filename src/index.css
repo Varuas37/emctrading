@@ -41,10 +41,13 @@ code {
 .testimonail {
 	font-size: 200px;
 }
+.pricing-cards:hover {
+	padding: 5%;
+}
 @media only screen and (max-width: 1000px) {
 	.testimonail {
 		font-size: 100px;
-		bottom: "10%";
-		top:0px;
+		bottom: '10%';
+		top: 0px;
 	}
 }

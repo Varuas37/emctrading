@@ -8,21 +8,21 @@ function Hero() {
 			id: 1,
 			name: svgLine,
 			opacity: 10,
-			
 		},
 		{
 			id: 2,
 			name: svgAreaChart,
 			opacity: 5,
-			
 		},
 		{
 			id: 3,
 			name: svgMainChart,
 			opacity: 10,
-			
 		},
 	];
+	const handleClick = () => {
+		window.location.href = 'https://upgrade.chat/shop/455927928618745869';
+	};
 	return (
 		<div
 			className="relative w-full h-4/5 md:h-screen bg-primarybg text-white flex justify-start items-center flex-col"
@@ -36,6 +36,7 @@ function Hero() {
 					</p>
 				</h1>
 				<button
+					onClick={handleClick}
 					className="z-10 text-lg font-bold bg-discord rounded shadow-lg p-4 m-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
 					style={{ width: '240px' }}
 				>
