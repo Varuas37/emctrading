@@ -5,8 +5,7 @@ import Footer from '../../Components/Footer/Footer';
 import Hero from '../../Components/Hero/Hero';
 import Testimonials from '../../Components/Testimonials/Testimonials';
 import Pricing from '../Pricing/Pricing';
-import Teaching from '../Teaching/Teaching';
-
+// import Teaching from '../Teaching/Teaching';
 
 function Landing(props) {
 	return (
@@ -14,9 +13,9 @@ function Landing(props) {
 			<Hero />
 			<Features />
 			<Testimonials />
-			<Teaching />
-			<Pricing/>
-			<Footer/>
+			{/* <Teaching /> */}
+			<Pricing />
+			<Footer />
 		</section>
 	);
 }

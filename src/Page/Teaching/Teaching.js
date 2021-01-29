@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import imgStockTeach from '../../Assets/Image/stockTeach.png';
+import imgStockTeach from '../../Assets/Image/stockTeach.svg';
 // import PropTypes from 'prop-types';
 
 function Teaching(props) {
@@ -9,7 +9,7 @@ function Teaching(props) {
 		window.location.href = discordLink;
 	};
 	return (
-		<section className="w-full h-4/5 md:h-3/6 text-secondarybg max-w-7xl mx-auto mt-7 mb-7 sm:mb-40 sm:px-6 lg:px-8 justify-center items-center">
+		<section className="w-full h-4/5 md:h-3/6 bg-primarybg bg-primarybg pb-10 p-4 text-white justify-center items-center">
 			<div className="text-3xl md:text-5xl text-center" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
 				Stocks Made Easy
 			</div>
@@ -24,16 +24,16 @@ function Teaching(props) {
 					</p>
 					<div
 						onClick={handleClick}
-						className="hidden md:block text-center z-10 text-lg font-bold bg-primarybg text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
+						className="hidden md:block text-center z-10 text-lg font-bold bg-discord text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
 						style={{ maxWidth: '170px' }}
 					>
 						Join Free Sessions
 					</div>
 				</div>
-				<img draggable="false" src={imgStockTeach} width="430px" height="312px" />
+				<img draggable="false" src={imgStockTeach} width="330px" height="212px" />
 				<div
 					onClick={handleClick}
-					className="md:hidden block z-10 text-center text-lg font-bold bg-primarybg text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
+					className="md:hidden block z-10 text-center text-lg font-bold bg-discord text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
 					style={{ maxWidth: '170px' }}
 				>
 					Join Free Sessions

@@ -37,7 +37,7 @@ function Testimonials() {
 		},
 	];
 	return (
-		<section id="reviews" className="relative sm:px-6 lg:px-8 bg-lightbluebg w-full p-4 text-white mt-10">
+		<section id="reviews" className="relative sm:px-6 lg:px-8 bg-lightbluebg w-full p-4 text-white">
 			<div className="flex flex-justify items-center flex-col pt-20" style={{ fontFamily: 'Gilroy' }}>
 				<h1
 					className="flex flex-col font-bold text-3xl sm:text-4xl flex-wrap"

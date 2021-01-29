@@ -1,14 +1,10 @@
 import React from 'react';
+import PricingCards from "./PricingCards"
 import imgGeneral from '../../Assets/Image/generalmember.svg';
-// import imgProMember from '../../Assets/Image/promember.svg';
 import imgDiamondMember from '../../Assets/Image/diamondM.svg';
 
 function Pricing(props) {
-	const handleClick = (link) => {
-		window.location.href = link;
-	};
 	const discordLink = 'https://discord.gg/6BnZXEDu';
-
 	const pricing = [
 		{
 			id: 1,
@@ -44,33 +40,7 @@ function Pricing(props) {
 			<div className="w-4/5 flex flex-col sm:flex-row justify-center items-center mt-10 sm:space-x-12 space-y-10">
 				{pricing &&
 					pricing.map((options) => (
-						<div
-							className="flex flex-col pb-4 p-10 rounded-xl text-white w-4/5 items-center justify-center "
-							style={{
-								backgroundColor: '#183D78',
-							}}
-						>
-							<h1
-								className="text-center w-full text-xl sm:text-2xl"
-								style={{ fontFamily: 'Gilroy-ExtraBold' }}
-							>
-								{options.title}
-							</h1>
-							<img className="mt-2" src={options.image} height="200px" width="250px" draggable="false" />
-							<div
-								onClick={() => handleClick(options.link)}
-								className="p-4 mt-10 rounded-md"
-								style={{
-									maxHeight: '200px',
-									maxWidth: '90%',
-									backgroundColor: options.color,
-									fontFamily: 'Gilroy-ExtraBold',
-									cursor: 'pointer',
-								}}
-							>
-								<span className="text-md">{options.price}</span>
-							</div>
-						</div>
+					<PricingCards key ={options.key} options={options} />
 					))}
 			</div>
 		</section>
