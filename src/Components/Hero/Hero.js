@@ -20,7 +20,7 @@ function Hero() {
 			opacity: 0.1,
 		},
 	];
-	const shopLink = "https://upgrade.chat/shop/455927928618745869"
+	const shopLink = 'https://upgrade.chat/shop/455927928618745869';
 	const handleClick = () => {
 		window.location.href = shopLink;
 	};

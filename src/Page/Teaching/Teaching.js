@@ -25,18 +25,18 @@ function Teaching(props) {
 					<div
 						onClick={handleClick}
 						className="hidden md:block z-10 text-lg font-bold bg-primarybg text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
-						style={{ width: 'fit-content' }}
+						style={{ maxWidth: '170px' }}
 					>
-						Join Discord
+						Join Free Sessions
 					</div>
 				</div>
-				<img draggable="false" src={imgStockTeach} width="530px" height="412px" />
+				<img draggable="false" src={imgStockTeach} width="630px" height="512px" />
 				<div
 					onClick={handleClick}
-					className="md:hidden inline z-10 text-lg font-bold bg-primarybg text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
-					style={{ width: 'fit-content' }}
+					className="md:hidden block z-10 text-lg font-bold bg-primarybg text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "
+					style={{ maxWidth: '170px' }}
 				>
-					Join Discord
+					Join
 				</div>
 			</div>
 		</section>

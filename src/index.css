@@ -50,6 +50,7 @@ code {
 .pricing-cards:hover {
 	padding: 5%;
 }
+
 @media only screen and (max-width: 1000px) {
 	.testimonail {
 		font-size: 100px;

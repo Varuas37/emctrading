@@ -46,7 +46,7 @@ function Testimonials() {
 					Great Outcomes
 				</h1>
 
-				<p className="sm:text-lg text-base">In total, our members have made over 4M+ in profits</p>
+				<p className="sm:text-lg mt-5 sm:mt-10 text-base">In total, our members have made over 4M+ in profits</p>
 			</div>
 			<div className="flex flex-row items-center justify-center mt-20 z-10">
 				<img

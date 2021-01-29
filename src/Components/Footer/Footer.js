@@ -31,8 +31,8 @@ function Footer() {
 	return (
 		<footer>
 			<div
-				className="bg-secondarybg w-full text-white flex flex-col items-center justify-center space-y-4"
-				style={{ height: '100px' }}
+				className="bg-secondarybg w-full text-white flex flex-col items-center justify-center space-y-4 pt-5"
+				style={{ maxHeight: '150px' }}
 			>
 				<nav className="space-x-4 pl-4">
 					{footerLinks &&
@@ -42,7 +42,9 @@ function Footer() {
 							</a>
 						))}
 				</nav>
-				<div className="text-white text-sm opacity-40">Copyright 2021 EMC Trading LLC. All rights reserved</div>
+				<div className="text-white text-sm opacity-40 p-3 text-center w-full">
+					Copyright 2021 EMC Trading LLC. All rights reserved
+				</div>
 			</div>
 		</footer>
 	);
