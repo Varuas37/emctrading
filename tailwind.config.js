@@ -17,11 +17,13 @@ module.exports = {
 			yellow: colors.amber,
 			primarybg: "#041A32",
 			secondarybg:"#17366D",
+			lightbluebg:"#031C39",
 			darkpink:"#F44292",
 			darkblue:"#0B1238",
 			accent:"#DDB191",
 			discord:"#7289DA",
 		},
+		
 	},
 	variants: {
 		extend: {},

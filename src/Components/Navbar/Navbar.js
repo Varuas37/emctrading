@@ -3,16 +3,19 @@ import imgDiscordLogo from '../../Assets/Image/discord-logo.png';
 function Navbar() {
 	const navlinks = [
 		{
+			key: 1,
 			name: 'Home',
-			link: '/home',
+			link: '/',
 		},
 		{
+			key: 2,
 			name: 'Features',
-			link: '/feature',
+			link: '#features',
 		},
 		{
+			key: 3,
 			name: 'Pricings',
-			link: '/pricing',
+			link: '#pricing',
 		},
 	];
 	return (
@@ -27,13 +30,13 @@ function Navbar() {
 					></path>
 				</svg>
 				<h1 className="font-md sm:inline hidden" style={{ fontFamily: 'Rufina-Bold', fontSize: '24px' }}>
-					EMC capital
+					Stoff Capital
 				</h1>
 			</div>
 			<div className="flex flex-row space-x-2 sm:space-x-6 items-center justify-around" id="NavLinks">
 				<nav className="text-white space-x-2 sm:space-x-4" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
 					{navlinks.map((item) => (
-						<a className="p-2 cursor-pointer" href={item.link}>
+						<a key={item.key} className="p-2 cursor-pointer" href={item.link}>
 							{item.name}
 						</a>
 					))}
@@ -45,7 +48,6 @@ function Navbar() {
 					<img src={imgDiscordLogo} height="30" width="120"></img>
 				</a>
 			</div>
-			
 		</header>
 	);
 }

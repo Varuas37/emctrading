@@ -7,19 +7,28 @@ function Hero() {
 		{
 			id: 1,
 			name: svgLine,
+			opacity: 10,
+			
 		},
 		{
 			id: 2,
 			name: svgAreaChart,
+			opacity: 5,
+			
 		},
 		{
 			id: 3,
 			name: svgMainChart,
+			opacity: 10,
+			
 		},
 	];
 	return (
-		<div className="h-screen w-full bg-primarybg text-white flex justify-start items-center flex-col" id="hero">
-			<div className="flex flex-center flex-col items-center justify-center m-40">
+		<div
+			className="relative w-full h-4/5 md:h-screen bg-primarybg text-white flex justify-start items-center flex-col"
+			id="hero"
+		>
+			<div className="w-full flex flex-center flex-col items-center justify-center m-40">
 				<h1 className="text-4xl md:text-7xl text-center	" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
 					Investing Advice For{' '}
 					<p>
@@ -33,16 +42,14 @@ function Hero() {
 					Purchase
 				</button>
 			</div>
-			<div
-				className="z-0 flex flex-col w-full absolute"
-				style={{ bottom: 0, backgroundImage: { svgMainChart } }}
-			>
+			<div className="z-0 flex flex-col w-full absolute" style={{ bottom: 0, backgroundImage: { svgMainChart } }}>
 				{images &&
 					images.map((image) => (
 						<img
+							key={image.id}
 							draggable="false"
 							src={image.name}
-							className="absolute w-full opacity-10"
+							className={`absolute w-full opacity-${image.opacity}`}
 							alt="background image line"
 							style={{ bottom: 0 }}
 						></img>

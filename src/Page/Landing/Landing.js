@@ -1,18 +1,18 @@
-import React from 'react'
-import Hero from '../../Components/Hero/Hero'
-// import Lorem from '../../Components/LoremTest/Lorem'
-import Navbar from '../../Components/Navbar/Navbar'
+import React from 'react';
 
+import Features from '../../Components/Features/Features';
+import Hero from '../../Components/Hero/Hero';
+import Navbar from '../../Components/Navbar/Navbar';
+import Testimonials from '../../Components/Testimonials/Testimonials';
 
 function Landing(props) {
-    return (
-        <section className="flex flex-col h-screen bg-blue-100 w-full">
-            <Navbar/>
-            <Hero/>
-        </section>
-    )
+	return (
+		<section className="flex-1 overflow-y-auto items-center justify-center flex-col h-screen w-full">
+			<Hero />
+			<Features />
+			<Testimonials />
+		</section>
+	);
 }
 
-
-export default Landing
-
+export default Landing;
