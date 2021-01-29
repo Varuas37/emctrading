@@ -30,14 +30,14 @@ function Navbar() {
 						clip-rule="evenodd"
 					></path>
 				</svg>
-				<h1 className="font-md sm:inline hidden" style={{ fontFamily: 'Rufina-Bold', fontSize: '24px' }}>
+				<h1 className="font-md sm:inline hidden" style={{ fontFamily: 'Rufina-Bold', fontSize: '28px' }}>
 					Stoff Capital
 				</h1>
 			</div>
 			<div className="flex flex-row space-x-2 sm:space-x-6 items-center justify-around" id="NavLinks">
 				<nav className="text-white space-x-2 sm:space-x-4" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
 					{navlinks.map((item) => (
-						<a key={item.key} className="p-2 cursor-pointer" href={item.link}>
+						<a key={item.key} className="p-2 cursor-pointer text-lg	" href={item.link} style={{fontSize:"22px"}}>
 							{item.name}
 						</a>
 					))}
