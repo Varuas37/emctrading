@@ -29,9 +29,9 @@ function Footer() {
 		},
 	];
 	return (
-		<footer>
+		<footer className="shadow-lg ">
 			<div
-				className="bg-secondarybg w-full text-white flex flex-col items-center justify-center space-y-4 pt-5"
+				className="bg-secondarybg w-full text-white flex flex-col items-center justify-center space-y-4 pt-5   "
 				style={{ maxHeight: '150px' }}
 			>
 				<nav className="space-x-4 pl-4">
@@ -43,7 +43,7 @@ function Footer() {
 						))}
 				</nav>
 				<div className="text-white text-sm opacity-40 p-3 text-center w-full">
-					Copyright 2021 EMC Trading LLC. All rights reserved
+					Copyright © 2021 Stoff Capital LLC. All rights reserved
 				</div>
 			</div>
 		</footer>

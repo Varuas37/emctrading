@@ -40,13 +40,13 @@ function Testimonials() {
 		<section id="reviews" className="relative sm:px-6 lg:px-8 bg-lightbluebg w-full p-4 text-white">
 			<div className="flex flex-justify items-center flex-col pt-20" style={{ fontFamily: 'Gilroy' }}>
 				<h1
-					className="flex flex-col font-bold text-3xl sm:text-4xl flex-wrap"
+					className="flex flex-col font-bold text-4xl sm:text-5xl flex-wrap"
 					style={{ fontFamily: 'Gilroy-ExtraBold' }}
 				>
 					Great Outcomes
 				</h1>
 
-				<p className="sm:text-lg mt-5 sm:mt-10 text-base">In total, our members have made over 4M+ in profits</p>
+				<p className="sm:text-xl mt-4 text-lg sm:mt-6 text-base">In total, our members have made over 4M+ in profits</p>
 			</div>
 			<div className="flex flex-row items-center justify-center mt-20 z-10">
 				<img

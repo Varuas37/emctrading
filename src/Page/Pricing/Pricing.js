@@ -35,7 +35,7 @@ function Pricing(props) {
 			>
 				Become a member!
 			</div>
-			<p className="text-white">For the cost of your Netlfix subscription</p>
+			<p className="text-white text-lg">For the cost of your Netlfix subscription</p>
 
 			<div className="w-4/5 flex flex-col sm:flex-row justify-center items-center mt-10 sm:space-x-12 space-y-10">
 				{pricing &&
