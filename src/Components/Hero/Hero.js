@@ -26,7 +26,7 @@ function Hero() {
 	};
 	return (
 		<div
-			className="relative w-full h-4/5 md:h-screen bg-primarybg text-white flex justify-start items-center flex-col"
+			className="relative w-full max-h-5/6 sm:h-screen bg-primarybg text-white flex justify-start items-center flex-col"
 			id="hero"
 		>
 			<div className="w-full flex flex-center flex-col items-center justify-center mt-40">
@@ -48,12 +48,12 @@ function Hero() {
 				{images &&
 					images.map((image) => (
 						<img
-							key={image.id}
+						key={image.id}
 							draggable="false"
 							src={image.name}
 							className={`absolute w-full `}
 							alt="background image line"
-							style={{ bottom: 0, opacity: `${image.opacity}` }}
+							style={{ bottom: 0, opacity: image.opacity}}
 						></img>
 					))}
 			</div>

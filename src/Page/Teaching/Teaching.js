@@ -14,7 +14,7 @@ function Teaching(props) {
 				Stocks Made Easy
 			</div>
 			<div className="flex flex-col sm:flex-row p-2 sm:p-0 justify-between items-center">
-				<div>
+				<div className="flex flex-col p-3">
 					<p>
 						Getting started with stock market can be challenging. Not all of us have time to research and
 						read about the next big stock or what is going on in stock market. Our dedicted staffs will not
@@ -30,7 +30,7 @@ function Teaching(props) {
 						Join Free Sessions
 					</div>
 				</div>
-				<img draggable="false" src={imgStockTeach} width="630px" height="512px" />
+				<img draggable="false" src={imgStockTeach} width="430px" height="312px" />
 				<div
 					onClick={handleClick}
 					className="md:hidden block z-10 text-lg font-bold bg-primarybg text-white rounded shadow-lg p-3 mt-10 pl-8 pr-8  focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent hover:bg-secondarybg-700 "

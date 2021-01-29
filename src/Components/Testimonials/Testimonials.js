@@ -12,7 +12,7 @@ function Testimonials() {
 		{
 			id: 2,
 			username: 'Elon Musk',
-			review: 'I drive the prices of whatever is being discussed in the group. Join us bois',
+			review: 'I drive the prices of whatever is being discussed in the group. Join us!',
 		},
 		{
 			id: 3,
@@ -33,7 +33,7 @@ function Testimonials() {
 			id: 6,
 			username: 'Elon Musk',
 			review:
-				"Sorry to interrupt but Guys! We've got important things to do. Let's focus on Mars for now. And this group of course",
+				"Sorry to interrupt but Guys! We've got important things to do. Let's focus on Mars for now. And this group of course! Join us!",
 		},
 	];
 	return (

@@ -14,7 +14,7 @@ function Features() {
 	return (
 		<section id="features" className="max-w-7xl mx-auto mt-7 sm:px-6 lg:px-8">
 			<h1
-				className="flex flex-col font-bold text-5xl bg text m-2 flex-wrap"
+				className="flex flex-col font-bold text-3xl ml-10 sm:p-0 sm:text-5xl bg text m-2 flex-wrap"
 				style={{ fontFamily: 'Gilroy-ExtraBold' }}
 			>
 				Features

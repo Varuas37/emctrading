@@ -1,6 +1,6 @@
 import React from 'react';
 import imgGeneral from '../../Assets/Image/generalmember.svg';
-import imgProMember from '../../Assets/Image/promember.svg';
+// import imgProMember from '../../Assets/Image/promember.svg';
 import imgDiamondMember from '../../Assets/Image/diamondM.svg';
 
 function Pricing(props) {
@@ -47,7 +47,6 @@ function Pricing(props) {
 						<div
 							className="flex flex-col pb-4 p-10 rounded-xl text-white w-4/5 items-center justify-center "
 							style={{
-								// height: `${options.height}`,
 								backgroundColor: '#183D78',
 							}}
 						>
@@ -57,12 +56,13 @@ function Pricing(props) {
 							>
 								{options.title}
 							</h1>
-							<img className="mt-2" src={options.image} height="250px" width="150px" draggable="false" />
+							<img className="mt-2" src={options.image} height="200px" width="250px" draggable="false" />
 							<div
 								onClick={() => handleClick(options.link)}
 								className="p-4 mt-10 rounded-md"
 								style={{
-									height: 'fit-content',
+									maxHeight: '200px',
+									maxWidth: '90%',
 									backgroundColor: options.color,
 									fontFamily: 'Gilroy-ExtraBold',
 									cursor: 'pointer',
