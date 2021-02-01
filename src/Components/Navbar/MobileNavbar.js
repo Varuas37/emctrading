@@ -1,14 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-scroll';
 
 function MobileNavbar({ close }) {
 	return (
-		<div class="flex flex-col flex-grow border-gray-200 pt-5 pb-4 bg-primarybg overflow-y-auto">
+		<div class="md:hidden flex flex-col flex-grow border-gray-200 pt-5 pb-4 bg-primarybg overflow-y-auto">
 			<div class="mt-5 flex-grow flex flex-col">
-				<nav class="flex-1 px-2 bg-primarybg space-y-1" aria-label="Sidebar">
-					<a
+				<nav class="cursor-pointer flex-1 px-2 bg-primarybg space-y-1" aria-label="Sidebar">
+					<Link
 						onClick={() => close(false)}
-						href="#hero"
+						to="hero"
+						spy={true}
+						smooth={true}
+						offset={-200}
+						duration={0}
 						class="bg-primarybg text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
 					>
 						<svg
@@ -27,11 +32,15 @@ function MobileNavbar({ close }) {
 							/>
 						</svg>
 						Home
-					</a>
-					<a
+					</Link>
+					<Link
 						onClick={() => close(false)}
-						href="#features"
-						class="text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+						to="features"
+						spy={true}
+						smooth={true}
+						offset={-200}
+						duration={0}
+						class="bg-primarybg text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
 					>
 						<svg
 							class="w-6 h-6 mr-3"
@@ -46,11 +55,15 @@ function MobileNavbar({ close }) {
 							></path>
 						</svg>
 						Features
-					</a>
-					<a
+					</Link>
+					<Link
 						onClick={() => close(false)}
-						href="#reviews"
-						class="text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+						to="reviews"
+						spy={true}
+						smooth={true}
+						offset={-200}
+						duration={0}
+						class="bg-primarybg text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
 					>
 						<svg
 							class="text-white group-hover:text-white mr-3 h-6 w-6"
@@ -68,11 +81,15 @@ function MobileNavbar({ close }) {
 							/>
 						</svg>
 						Testimonials
-					</a>
-					<a
+					</Link>
+					<Link
 						onClick={() => close(false)}
-						href="#pricing"
-						class="text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+						to="pricing"
+						spy={true}
+						smooth={true}
+						offset={-200}
+						duration={0}
+						class="bg-primarybg text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
 					>
 						<svg
 							class="w-6 h-6 mr-3 text-white"
@@ -88,7 +105,7 @@ function MobileNavbar({ close }) {
 							></path>
 						</svg>
 						Pricing
-					</a>
+					</Link>
 				</nav>
 			</div>
 		</div>

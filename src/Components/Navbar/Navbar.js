@@ -1,29 +1,30 @@
 import React, { useState } from 'react';
 import imgDiscordLogo from '../../Assets/Image/discord-logo.png';
 import MobileNavbar from './MobileNavbar';
+import { Link } from 'react-scroll';
 function Navbar() {
-	const [toogleMenu, setToggleMenu] = useState(false);
+	const [toggleMenu, setToggleMenu] = useState(false);
 	const handleMenu = () => {};
 	const navlinks = [
 		{
 			key: 0,
 			name: 'Home',
-			link: '#hero',
+			link: 'hero',
 		},
 		{
 			key: 1,
 			name: 'Features',
-			link: '#features',
+			link: 'features',
 		},
 		{
 			key: 2,
 			name: 'Testimonials',
-			link: '#reviews',
+			link: 'reviews',
 		},
 		{
 			key: 3,
 			name: 'Pricing',
-			link: '#pricing',
+			link: 'pricing',
 		},
 	];
 	const discordLink = 'https://discord.gg/6BnZXEDu';
@@ -52,16 +53,23 @@ function Navbar() {
 					className="hidden md:flex flex-row space-x-2  sm:space-x-6 items-center justify-around"
 					id="NavLinks"
 				>
-					<nav className="text-white space-x-2 sm:space-x-4" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
+					<nav
+						className="flex flex-row text-white space-x-2 sm:space-x-4"
+						style={{ fontFamily: 'Gilroy-ExtraBold' }}
+					>
 						{navlinks.map((item) => (
-							<a
-								key={item.key}
-								className="p-2 cursor-pointer text-lg	"
-								href={item.link}
-								style={{ fontSize: '22px' }}
+							<Link
+								onClick={() => setToggleMenu(!toggleMenu)}
+								to={item.link}
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={200}
+								class="bg-primarybg block text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
+								style={{ fontSize: 22, cursor: 'pointer' }}
 							>
 								{item.name}
-							</a>
+							</Link>
 						))}
 					</nav>
 					<a
@@ -73,7 +81,7 @@ function Navbar() {
 				</div>
 				<div
 					className="md:hidden flex relative cursor-pointer flex-col space-y-4"
-					onClick={() => setToggleMenu(!toogleMenu)}
+					onClick={() => setToggleMenu(!toggleMenu)}
 				>
 					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -84,7 +92,7 @@ function Navbar() {
 					</svg>
 				</div>
 			</div>
-			{toogleMenu ? <MobileNavbar close = {setToggleMenu}/> : null}
+			{toggleMenu ? <MobileNavbar close={setToggleMenu} /> : null}
 		</header>
 	);
 }
