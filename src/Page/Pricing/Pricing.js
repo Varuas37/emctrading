@@ -10,7 +10,7 @@ function Pricing(props) {
 			id: 1,
 			title: 'Pro',
 			price: '$15 per month',
-			subtext: '7 days free trial',
+			subtext: '7 days free trial. Cancel anytime',
 			image: imgDiamondMember,
 			color: '#F64B9D',
 			link: 'https://upgrade.chat/shop/455927928618745869',

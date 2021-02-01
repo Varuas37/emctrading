@@ -22,7 +22,7 @@ function Navbar() {
 		},
 		{
 			key: 3,
-			name: 'Pricings',
+			name: 'Pricing',
 			link: '#pricing',
 		},
 	];

@@ -1,7 +1,7 @@
 import React from 'react';
 import FeatureCards from './FeatureCards';
 import imgDollar from '../../Assets/Image/dollar.png';
-import imgEducation from '../../Assets/Image/teaching.png';
+import imgEducation from '../../Assets/Image/education.png';
 import imgCommunity from '../../Assets/Image/community.png';
 
 function Features() {
