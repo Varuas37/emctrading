@@ -1,39 +1,27 @@
 import React from 'react';
-import imgRobinhood from '../../Assets/Image/robinhood.png';
+import imgApple from '../../Assets/Image/apple.png';
+import imgHomeDepot from '../../Assets/Image/homeDepot.png';
+import imgTesla from '../../Assets/Image/tesla.png';
 import TestimonialCard from './TestimonialCard';
 
 function Testimonials() {
 	const testimonials = [
 		{
 			id: 1,
-			username: 'Jeff Bezos',
-			review: 'How did you think I became a billionaire?',
+			username: 'Jake M',
+			review:
+				'“Stoff Capital is amazing. Everyone is so helpful, and there is a huge emphasis on education unlike some other servers.”',
 		},
 		{
 			id: 2,
-			username: 'Elon Musk',
-			review: 'I drive the prices of whatever is being discussed in the group. Join us!',
+			username: 'Rohan T ',
+			review: '“The trades that the staff post are amazing.”',
 		},
 		{
 			id: 3,
-			username: 'Justin Beiber',
-			review: 'I finally learned investing. I am about to be a billionaire soon',
-		},
-		{
-			id: 4,
-			username: 'Selena Gomez',
-			review: "Yeah Justin doesn't know shit. He invested in the stocks that we were told not to",
-		},
-		{
-			id: 5,
-			username: 'Justin Beiber',
-			review: 'Sorry to leave a review again, but stfu Selena.',
-		},
-		{
-			id: 6,
-			username: 'Elon Musk',
+			username: 'Sarah R',
 			review:
-				"Sorry to interrupt but Guys! We've got important things to do. Let's focus on Mars for now. And this group of course! Join us!",
+				'“My favorite thing about this server are the Q&A sessions. I have learnt a lot about trading, and I find all of the recorded lessons very helpful as well.”',
 		},
 	];
 	return (
@@ -52,14 +40,14 @@ function Testimonials() {
 				<img
 					draggable="false"
 					className="hidden md:block"
-					src={imgRobinhood}
+					src={imgApple}
 					alt="screenshot of our member with 100% gains in a month"
 					height="440px"
 					width="200px"
 				/>
 				<img
 					draggable="false"
-					src={imgRobinhood}
+					src={imgTesla}
 					height="540px"
 					alt="screenshot of our member with 200% gains in a month"
 					width="300px"
@@ -67,7 +55,7 @@ function Testimonials() {
 				<img
 					draggable="false"
 					className="hidden md:block"
-					src={imgRobinhood}
+					src={imgHomeDepot}
 					alt="screenshot of our member with 150% gains in a month"
 					height="440px"
 					width="200px"
