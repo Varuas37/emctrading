@@ -1,5 +1,5 @@
 import React from 'react';
-import PricingCards from "./PricingCards"
+import PricingCards from './PricingCards';
 import imgGeneral from '../../Assets/Image/generalmember.svg';
 import imgDiamondMember from '../../Assets/Image/diamondM.svg';
 
@@ -10,6 +10,7 @@ function Pricing(props) {
 			id: 1,
 			title: 'Pro',
 			price: '$15 per month',
+			subtext: '7 days free trial',
 			image: imgDiamondMember,
 			color: '#F64B9D',
 			link: 'https://upgrade.chat/shop/455927928618745869',
@@ -18,6 +19,7 @@ function Pricing(props) {
 			id: 2,
 			title: 'General Member',
 			price: 'Free! Join Now',
+			subtext: '',
 			image: imgGeneral,
 			color: '#7289DA',
 			link: discordLink,
@@ -35,13 +37,10 @@ function Pricing(props) {
 			>
 				Become a member!
 			</div>
-			<p className="text-white text-lg">For the cost of your Netlfix subscription</p>
+			<p className="text-white text-lg">For the cost of your Netflix subscription</p>
 
 			<div className="w-4/5 flex flex-col sm:flex-row justify-center items-center mt-10 sm:space-x-12 space-y-10">
-				{pricing &&
-					pricing.map((options) => (
-					<PricingCards key ={options.key} options={options} />
-					))}
+				{pricing && pricing.map((options) => <PricingCards key={options.key} options={options} />)}
 			</div>
 		</section>
 	);

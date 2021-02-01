@@ -22,9 +22,9 @@
 		src: local('Gilroy-ExtraBold'), url(./Assets/font/Gilroy/Gilroy-ExtraBold.otf) format('otf');
 	}
 }
-/* *{
+*{
 	scroll-behavior: smooth !important;
-} */
+}
 html,
 body {
 	max-width: 100%;

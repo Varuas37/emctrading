@@ -26,11 +26,14 @@ function Hero() {
 	};
 	return (
 		<div
-			className="relative w-full max-h-5/6 sm:h-screen bg-primarybg text-white flex justify-start items-center flex-col"
+			className="relative w-full h-screen sm:h-screen bg-primarybg text-white flex justify-start items-center flex-col"
 			id="hero"
 		>
 			<div className="w-full flex flex-center flex-col items-center justify-center mt-40">
-				<h1 className="text-4xl md:text-7xl text-center	" style={{ fontFamily: 'Gilroy-ExtraBold' }}>
+				<h1
+					className="xs:text-3xl text-4xl md:text-6xl lg:text-7xl text-center	"
+					style={{ fontFamily: 'Gilroy-ExtraBold' }}
+				>
 					Investing Advice For{' '}
 					<p>
 						Everyday <span className="text-accent">Traders</span>
@@ -48,15 +51,28 @@ function Hero() {
 				{images &&
 					images.map((image) => (
 						<img
-						key={image.id}
+							key={image.id}
 							draggable="false"
 							src={image.name}
 							className={`absolute w-full `}
 							alt="background image line"
-							style={{ bottom: 0, opacity: image.opacity}}
+							style={{ bottom: 0, opacity: image.opacity }}
 						></img>
 					))}
 			</div>
+			<svg
+				class="animate-bounce w-8 h-8 absolute sm:hidden inline"
+				fill="white"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+				style={{ bottom: '20%' }}
+			>
+				<path
+					fill-rule="evenodd"
+					d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
+					clip-rule="evenodd"
+				></path>
+			</svg>
 		</div>
 	);
 }

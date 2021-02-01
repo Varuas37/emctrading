@@ -46,7 +46,7 @@ function Testimonials() {
 					Great Outcomes
 				</h1>
 
-				<p className="sm:text-xl mt-4 text-lg sm:mt-6 text-base">In total, our members have made over 4M+ in profits</p>
+				{/* <p className="sm:text-xl mt-4 text-lg sm:mt-6 text-base">UnComment to put a subtext</p> */}
 			</div>
 			<div className="flex flex-row items-center justify-center mt-20 z-10">
 				<img
@@ -87,7 +87,7 @@ function Testimonials() {
 					className="flex flex-col font-bold text-2xl w-full text-center sm:text-4xl justify-center items-center mt-10"
 					style={{ fontFamily: 'Gilroy-ExtraBold' }}
 				>
-					And lots of statisfied members
+					Lots of Satisfied Customers
 				</h1>
 				<div className=" bg-lightbluebg w-full xl:w-3/5  mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 					{testimonials &&
