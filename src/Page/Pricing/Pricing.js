@@ -1,10 +1,11 @@
 import React from 'react';
 import PricingCards from './PricingCards';
+import {discordLink,shopLink} from "../../config/links"
 import imgGeneral from '../../Assets/Image/generalmember.svg';
 import imgDiamondMember from '../../Assets/Image/diamondM.svg';
 
 function Pricing(props) {
-	const discordLink = 'https://discord.gg/6BnZXEDu';
+	
 	const pricing = [
 		{
 			id: 1,
@@ -13,7 +14,7 @@ function Pricing(props) {
 			subtext: '7 days free trial. Cancel anytime',
 			image: imgDiamondMember,
 			color: '#F64B9D',
-			link: 'https://upgrade.chat/shop/455927928618745869',
+			link: shopLink,
 		},
 		{
 			id: 2,

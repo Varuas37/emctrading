@@ -2,6 +2,7 @@ import React from 'react';
 import svgLine from '../../Assets/svg/lines.svg';
 import svgAreaChart from '../../Assets/svg/areachart.svg';
 import svgMainChart from '../../Assets/svg/mainGraph.svg';
+import { shopLink } from '../../config/links';
 function Hero() {
 	const images = [
 		{
@@ -20,7 +21,7 @@ function Hero() {
 			opacity: 0.1,
 		},
 	];
-	const shopLink = 'https://upgrade.chat/shop/455927928618745869';
+
 	const handleClick = () => {
 		window.location.href = shopLink;
 	};

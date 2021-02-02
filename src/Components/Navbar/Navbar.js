@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import imgDiscordLogo from '../../Assets/Image/discord-logo.png';
 import MobileNavbar from './MobileNavbar';
 import { Link } from 'react-scroll';
+import {discordLink} from "../../config/links"
 function Navbar() {
 	const [toggleMenu, setToggleMenu] = useState(false);
-	const handleMenu = () => {};
+	
 	const navlinks = [
 		{
 			key: 0,
@@ -27,7 +28,7 @@ function Navbar() {
 			link: 'pricing',
 		},
 	];
-	const discordLink = 'https://discord.gg/6BnZXEDu';
+	
 	return (
 		<header>
 			<div className="bg-primarybg text-white w-full h-16 flex flex-row p-10 items-center justify-between">
