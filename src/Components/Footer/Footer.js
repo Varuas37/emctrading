@@ -9,6 +9,12 @@ function Footer() {
 			newTab: false,
 		},
 		{
+			id: 2,
+			name: 'Privacy Policy',
+			link: '/privacy',
+			newTab: false,
+		},
+		{
 			id: 3,
 			name: 'Reviews',
 			link: '#reviews',

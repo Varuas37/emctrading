@@ -2,16 +2,11 @@ import React, { useState } from 'react';
 import imgDiscordLogo from '../../Assets/Image/discord-logo.png';
 import MobileNavbar from './MobileNavbar';
 import { Link } from 'react-scroll';
-import {discordLink} from "../../config/links"
+import { discordLink } from '../../config/links';
 function Navbar() {
 	const [toggleMenu, setToggleMenu] = useState(false);
-	
+
 	const navlinks = [
-		{
-			key: 0,
-			name: 'Home',
-			link: 'hero',
-		},
 		{
 			key: 1,
 			name: 'Features',
@@ -28,11 +23,13 @@ function Navbar() {
 			link: 'pricing',
 		},
 	];
-	
+	const takeHome = () => {
+		window.location.href = '/';
+	};
 	return (
 		<header>
 			<div className="bg-primarybg text-white w-full h-16 flex flex-row p-10 items-center justify-between">
-				<div className="flex flex-row space-x-2 item-center justify-center cursor-pointer">
+				<div className="flex flex-row space-x-2 item-center justify-center cursor-pointer" onClick={takeHome}>
 					<svg
 						className=" w-8 h-8"
 						fill="currentColor"
@@ -58,6 +55,14 @@ function Navbar() {
 						className="flex flex-row text-white space-x-2 sm:space-x-4"
 						style={{ fontFamily: 'Gilroy-ExtraBold' }}
 					>
+						<a
+							class="bg-primarybg block text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
+							style={{ fontSize: 22, cursor: 'pointer' }}
+							onClick={takeHome}
+						>
+							Home
+						</a>
+
 						{navlinks.map((item) => (
 							<Link
 								onClick={() => setToggleMenu(!toggleMenu)}

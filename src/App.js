@@ -5,7 +5,8 @@ import history from './utils/history';
 import Navbar from './Components/Navbar/Navbar';
 import Landing from './Page/Landing/Landing';
 import ErrorDisplay from './Page/Error/ErrorDisplay';
-import TermsAndConditions from './Page/TermsAndConditions/TermsAndConditions';
+// import TermsAndConditions from './Page/TermsAndConditions/TermsAndConditions';
+import PrivacyPolicy from './Page/TermsAndConditions/PrivacyPolicy';
 
 function App() {
 	return (
@@ -20,7 +21,7 @@ function App() {
 				<Navbar />
 				<Switch>
 					<Route exact path="/" component={Landing} />
-					<Route exact path="/terms-and-conditions" component={TermsAndConditions} />
+					<Route exact path="/privacy" component={PrivacyPolicy} />
 				</Switch>
 			</Router>
 		</ErrorBoundary>
