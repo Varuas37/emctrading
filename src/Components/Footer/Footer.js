@@ -5,27 +5,26 @@ function Footer() {
 		{
 			id: 1,
 			name: 'Contact Us',
-			link: '/contact',
-		},
-		{
-			id: 2,
-			name: 'FAQ',
-			link: '/faq',
+			link: 'mailto: ethan@stoffcapital.com',
+			newTab: false,
 		},
 		{
 			id: 3,
 			name: 'Reviews',
 			link: '#reviews',
+			newTab: false,
 		},
 		{
 			id: 4,
 			name: 'Terms and Conditions',
-			link: '/terms-and-conditions',
+			link: 'https://www.termsandconditionsgenerator.com/live.php?token=fkY8fTojoPC2cmnUnaBhQXZkw2kQTOir',
+			newTab: true,
 		},
 		{
 			id: 5,
 			name: 'Disclosures',
 			link: '/disclosures',
+			newTab: false,
 		},
 	];
 	return (
@@ -37,7 +36,12 @@ function Footer() {
 				<nav className="space-x-4 pl-4">
 					{footerLinks &&
 						footerLinks.map((item) => (
-							<a className="text-sm sm:text-base" href={item.link}>
+							<a
+								className="text-sm sm:text-base"
+								href={item.link}
+								target={item.newTab ? '_blank' : null}
+								rel={item.newTab ? 'noopener noreferrer' : null}
+							>
 								{item.name}
 							</a>
 						))}

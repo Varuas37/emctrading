@@ -5,6 +5,7 @@ import history from './utils/history';
 import Navbar from './Components/Navbar/Navbar';
 import Landing from './Page/Landing/Landing';
 import ErrorDisplay from './Page/Error/ErrorDisplay';
+import TermsAndConditions from './Page/TermsAndConditions/TermsAndConditions';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<Navbar />
 				<Switch>
 					<Route exact path="/" component={Landing} />
+					<Route exact path="/terms-and-conditions" component={TermsAndConditions} />
 				</Switch>
 			</Router>
 		</ErrorBoundary>
