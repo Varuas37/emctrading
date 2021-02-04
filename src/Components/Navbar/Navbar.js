@@ -1,31 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import imgDiscordLogo from '../../Assets/Image/discord-logo.png';
 import MobileNavbar from './MobileNavbar';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link, useLocation } from 'react-router-dom';
 import { discordLink } from '../../config/links';
+import { svgHome, svgFeatures, svgPricing, svgTestimonials } from './svgNavbar';
 function Navbar() {
-	const [toggleMenu, setToggleMenu] = useState(false);
+	const location = useLocation();
+	console.log(location.pathname);
 
-	const navlinks = [
+	const [toggleMenu, setToggleMenu] = useState(false);
+	const [navLink, setNavLink] = useState([]);
+	const homeNavLink = [
+		{
+			key: 0,
+			name: 'Home',
+			link: 'hero',
+			svg: svgHome,
+		},
 		{
 			key: 1,
 			name: 'Features',
 			link: 'features',
+			svg: svgFeatures,
 		},
 		{
 			key: 2,
 			name: 'Testimonials',
 			link: 'reviews',
+			svg: svgTestimonials,
 		},
 		{
 			key: 3,
 			name: 'Pricing',
 			link: 'pricing',
+			svg: svgPricing,
 		},
+	];
+	const otherNavLink = [
+		
 	];
 	const takeHome = () => {
 		window.location.href = '/';
 	};
+	useEffect(() => {
+		if (location.pathname == '/') {
+			setNavLink(homeNavLink);
+		} else {
+			setNavLink(otherNavLink);
+		}
+	}, [location.pathname]);
 	return (
 		<header>
 			<div className="bg-primarybg text-white w-full h-16 flex flex-row p-10 items-center justify-between">
@@ -49,33 +73,35 @@ function Navbar() {
 				</div>
 				<div
 					className="hidden md:flex flex-row space-x-2  sm:space-x-6 items-center justify-around"
-					id="NavLinks"
+					id="navLink"
 				>
 					<nav
 						className="flex flex-row text-white space-x-2 sm:space-x-4"
 						style={{ fontFamily: 'Gilroy-ExtraBold' }}
 					>
-						<a
+						{/* <Link
 							class="bg-primarybg block text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
 							style={{ fontSize: 22, cursor: 'pointer' }}
-							onClick={takeHome}
+							to="/"
 						>
 							Home
-						</a>
+						</Link> */}
 
-						{navlinks.map((item) => (
-							<Link
+						{navLink.map((item) => (
+							// <Link to={`/${item.link}`}>
+							<ScrollLink
 								onClick={() => setToggleMenu(!toggleMenu)}
 								to={item.link}
 								spy={true}
-								smooth={true}
+								smooth={'easeInOutQuint'}
 								offset={0}
 								duration={200}
 								class="bg-primarybg block text-white group flex items-center px-2 py-2 text-sm font-mediumrounded-md"
 								style={{ fontSize: 22, cursor: 'pointer' }}
 							>
 								{item.name}
-							</Link>
+							</ScrollLink>
+							// </Link>
 						))}
 					</nav>
 					<a
@@ -98,7 +124,7 @@ function Navbar() {
 					</svg>
 				</div>
 			</div>
-			{toggleMenu ? <MobileNavbar close={setToggleMenu} /> : null}
+			{toggleMenu ? <MobileNavbar close={setToggleMenu} navLink={navLink} /> : null}
 		</header>
 	);
 }

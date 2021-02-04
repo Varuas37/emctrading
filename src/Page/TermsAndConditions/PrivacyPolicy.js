@@ -214,7 +214,7 @@ function PrivacyPolicy(props) {
 					)}
 				</p>
 
-				<h1 className="text-2xl font-bold mt-5"> Effective as of January 29, 2021 </h1>
+				<h1 className="text-xl font-bold mt-5 mb-20"> Effective as of January 29, 2021 </h1>
 			</div>
 		</div>
 	);

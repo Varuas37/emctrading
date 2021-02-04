@@ -7,6 +7,8 @@ import Landing from './Page/Landing/Landing';
 import ErrorDisplay from './Page/Error/ErrorDisplay';
 // import TermsAndConditions from './Page/TermsAndConditions/TermsAndConditions';
 import PrivacyPolicy from './Page/TermsAndConditions/PrivacyPolicy';
+import Footer from './Components/Footer/Footer';
+import Disclosure from './Page/TermsAndConditions/Disclosure';
 
 function App() {
 	return (
@@ -22,7 +24,9 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={Landing} />
 					<Route exact path="/privacy" component={PrivacyPolicy} />
+					<Route exact path="/disclosure" component={Disclosure} />
 				</Switch>
+				<Footer />
 			</Router>
 		</ErrorBoundary>
 	);

@@ -15,7 +15,7 @@ function Landing(props) {
 			<Testimonials />
 			{/* <Teaching /> */}
 			<Pricing />
-			<Footer />
+			
 		</section>
 	);
 }

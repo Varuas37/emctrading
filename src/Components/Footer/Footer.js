@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 function Footer() {
 	const footerLinks = [
 		{
@@ -10,36 +10,27 @@ function Footer() {
 		},
 		{
 			id: 2,
-			name: 'Privacy Policy',
-			link: '/privacy',
-			newTab: false,
-		},
-		{
-			id: 3,
-			name: 'Reviews',
-			link: '#reviews',
-			newTab: false,
-		},
-		{
-			id: 4,
 			name: 'Terms and Conditions',
 			link: 'https://www.termsandconditionsgenerator.com/live.php?token=fkY8fTojoPC2cmnUnaBhQXZkw2kQTOir',
 			newTab: true,
 		},
 		{
-			id: 5,
+			id: 3,
 			name: 'Disclosures',
-			link: '/disclosures',
+			link: '/disclosure',
 			newTab: false,
 		},
 	];
 	return (
-		<footer className="shadow-lg ">
+		<footer className="shadow-lg" >
 			<div
 				className="bg-secondarybg w-full text-white flex flex-col items-center justify-center space-y-4 pt-5   "
 				style={{ maxHeight: '150px' }}
 			>
 				<nav className="space-x-4 pl-4">
+					<Link to="/privacy" className="text-sm sm:text-base">
+						Privacy Policy
+					</Link>
 					{footerLinks &&
 						footerLinks.map((item) => (
 							<a
